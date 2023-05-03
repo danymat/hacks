@@ -1,4 +1,11 @@
 #!/bin/bash
+# ChadGPT:
+#       Not all DNS zones and servers support the ANY query type. 
+#       Additionally, some DNS servers may not respond to ANY queries in order to protect against denial-of-service (DoS) attacks.
+# Usage: 
+#       ./anydig.sh -l hosts.txt 
+#       OR 
+#       ./anydig.sh example.com
 
 read_domains() {
   local filename="$1"
